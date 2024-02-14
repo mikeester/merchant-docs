@@ -94,7 +94,8 @@ To receive order notifications you must provide redirectUrl. You will receive th
   "order_crypto_address": "ltc1qlec2yfpkdvn4lr0vpf27qggrxtu34zeu5l6g2u",
   "external_transaction_id": "1234567",
   "external_customer_id": "1234567",
-  "order_amount_usd": 25
+  "order_amount_usd": 25,
+  "order_amount_usd_plus_fees": 25.5
 }
 ```
 
@@ -117,7 +118,8 @@ To receive order notifications you must provide redirectUrl. You will receive th
 - `order_crypto_address`: The crypto address where you receive the transaction.
 - `external_transaction_id`: Your transaction id (If provided in the URL).
 - `external_customer_id`: Your customer's id (If provided in the URL).
-- `order_amount_usd`: The `order_crypto_amount` converted to USD (Mid-market rates without spread).
+- `order_amount_usd`: The `order_crypto_amount` converted to USD (Mid-market rates without spread). This does not include the platform fee.
+- `order_amount_usd_plus_fees`: The `order_amount_usd` plus the platform fee.
 
 ### The signature:
 
