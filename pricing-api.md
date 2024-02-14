@@ -82,23 +82,26 @@ Minimum order amount is 7 EUR, 8 USD, or fiat currency equivalent.
 
 ## Supported Fiat Currencies
 
-- CHF, GBP, RON
-- CAD, USD, ZAR
-- INR, PLN, UAH
-- BRL, SEK, TWD
-- HUF, SGD, MXN
-- EUR, KZT, IDR
-- HKD, NZD, AUD
-- THB, CZK, TRY
-- DKK, JPY
+| Currency |  |  |
+| -------- | -------- | -------- |
+| CHF      | GBP      | RON      |
+| CAD      | USD      | ZAR      |
+| INR      | PLN      | UAH      |
+| BRL      | SEK      | TWD      |
+| HUF      | SGD      | MXN      |
+| EUR      | KZT      | IDR      |
+| HKD      | NZD      | AUD      |
+| THB      | CZK      | TRY      |
+| DKK      | JPY      |          |
 
 ## Supported Crypto Currencies
 
-- DOGE, LINK
-- BCH, USDT
-- BTC, USDC
-- XRP, DAI
-- LTC, ETH
+| Currency |     |     |
+| -------- | --- | --- |
+| BTC      | ETH | LTC |
+| BCH      | XRP | DAI |
+| DOGE     | LINK| USDT|
+| USDC     |     |     |
 
 ## Response
 
