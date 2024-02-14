@@ -143,6 +143,7 @@ const signature =
 
 ## Supported Cryptocurrencies:
 
+| Currency | ------------- | --- | ------------- | ------------- |
 | ------------ | ------------- | --- | ------------- | ------------- |
 | BTC          | LTC           | ETH | USDT (ERC-20) | USDC (ERC-20) |
 | DAI (ERC-20) | LINK (ERC-20) | BCH | DOGE          | XRP           |
@@ -150,6 +151,7 @@ const signature =
 
 ## Supported Fiat Currencies:
 
+| Currency | --- | --- | --- | --- |
 | --- | --- | --- | --- | --- |
 | EUR | USD | PLN | SEK | SGD |
 | KZT | RON | ZAR | UAH | TWD |
