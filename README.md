@@ -142,46 +142,22 @@ const signature =
 ```
 
 ## Supported Cryptocurrencies:
-- BTC
-- LTC
-- ETH
-- USDT (ERC-20)
-- USDC (ERC-20)
-- DAI (ERC-20)
-- LINK (ERC-20)
-- BCH
-- DOGE
-- XRP
+
+| ------------ | ------------- | --- | ------------- | ------------- |
+| BTC          | LTC           | ETH | USDT (ERC-20) | USDC (ERC-20) |
+| DAI (ERC-20) | LINK (ERC-20) | BCH | DOGE          | XRP           |
+
 
 ## Supported Fiat Currencies:
-- EUR
-- USD
-- PLN
-- SEK
-- SGD
-- KZT
-- RON
-- ZAR
-- UAH
-- TWD
-- MXN
-- IDR
-- JPY
-- AUD
-- HKD
-- NZD
-- THB
-- CZK
-- TRY
-- DKK
-- CHF
-- CAD
-- INR
-- BGN
-- ILS
-- BRL
-- HUF
-- GBP
+
+| --- | --- | --- | --- | --- |
+| EUR | USD | PLN | SEK | SGD |
+| KZT | RON | ZAR | UAH | TWD |
+| MXN | IDR | JPY | AUD | HKD |
+| NZD | THB | CZK | TRY | DKK |
+| CHF | CAD | INR | BGN | ILS |
+| BRL | HUF | GBP |     |     |
+
 
 ## Test Credentials
 
