@@ -21,7 +21,7 @@
 ## API Information
 
 ### URL
-`https\://eoats3bjlps5hvb.m.pipedream.net`
+`https://eoats3bjlps5hvb.m.pipedream.net`
 
 ### Body Format
 
@@ -29,9 +29,9 @@
 {
   "payment_method": "creditcard",
   "fiat_currency": "EUR",
-  "fiat_amount": 100, \(Optional\)
+  "fiat_amount": 100, (Optional)
   "crypto_currency": "LTC",
-  "crypto_amount": 1 \(Optional\)
+  "crypto_amount": 1 (Optional)
 }
 ```
 ## Definition
