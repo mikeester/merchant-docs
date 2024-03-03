@@ -163,7 +163,7 @@ const signature =
 
 ## Test Credentials
 
-It's currently only possible to make test orders with a Visa/Mastercard.
+It's currently only possible to make test orders with Visa/MasterCard as the payment method.
 
 ### Credit Card:
 
