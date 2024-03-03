@@ -29,7 +29,7 @@ This documentation is for merchants who want to integrate Bitinvestor Checkout i
 
 - `apiKey`: Your publishable API key for customer and transaction assignment. Also known as the public key.
 - `currencyCode`: The cryptocurrency code (e.g., BTC, ETH, BCH) for purchase. See below for all supported cryptocurrencies. If multiple walletAddress is set, this will be the default.
-- `walletAddress`: The destination cryptocurrency wallet address for purchased funds. If you want to support multiple cryptocurrencies format should be: btc:testaddress1,ltc: testaddress2,doge:testaddress3
+- `walletAddress`: The destination cryptocurrency wallet address for purchased funds. If you want to support multiple cryptocurrencies format should be: btc:testaddress1,ltc:testaddress2,doge:testaddress3
 
 ### Optional Parameters:
 
