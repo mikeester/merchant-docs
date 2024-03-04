@@ -41,6 +41,7 @@ This documentation is for merchants who want to integrate Bitinvestor Checkout i
 - `externalTransactionId`: A unique identifier for the transaction.
 - `externalCustomerId`: A unique identifier for the customer.
 - `redirectUrl`: The URL for redirection after purchase completion.
+- `responseUrl`: The URL for receiving order notfications. See more under the secition Order Notifications.
 - `customerKYC`: The level of Know Your Customer (KYC) verification.
 - `style`: The styling ID provided by Bitinvestor for customization.
 
@@ -79,7 +80,7 @@ https://checkout.bitinvestor.net?apiKey={pk_live_key}&currencyCode=btc&signature
 ```
 
 ## Order Notifications:
-To receive order notifications you must provide redirectUrl. You will receive the notification on the provided url. In the header of the HTTP request there’s a signature to make sure the data comes from Bitinvestor. 
+To receive order notifications you must provide responseUrl. You will receive the notification on the provided url. In the header of the HTTP request there’s a signature to make sure the data comes from Bitinvestor. 
 
 ### Responses
 
