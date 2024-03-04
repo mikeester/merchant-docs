@@ -1,6 +1,6 @@
 # Bitinvestor Merchant Checkout Documentation
 
-This documentation is for merchants who want to integrate Bitinvestor Checkout into their website. Bitinvestor Checkout is a widget that allows you to deposit crypto on your website, paid for by the user in fiat. The widget is embedded in an iFrame and is fully customizable. The widget is designed to be simple to use and easy to integrate into your website.
+This documentation is for merchants who want to integrate Bitinvestor Checkout into their website. Bitinvestor Checkout is a widget that allows your customers to deposit crypto on your website, paid for by the user in fiat. The widget is embedded in an iFrame and is fully customizable. The widget is designed to be simple to use and easy to integrate into your website.
 
 
 - [Bitinvestor Merchant Checkout Documentation](#bitinvestor-merchant-checkout-documentation)
@@ -42,7 +42,7 @@ This documentation is for merchants who want to integrate Bitinvestor Checkout i
 - `externalCustomerId`: A unique identifier for the customer.
 - `redirectUrl`: The URL for redirection after purchase completion. Must be URLencoded, e.g. https%3A%2F%2Fwww.myurl.com.
 - `responseUrl`: The URL for receiving order notfications. See more under the secition Order Notifications. Must be URLencoded, e.g. https%3A%2F%2Fwww.myurl.com.
-- `customerKYC`: The level of Know Your Customer (KYC) verification.
+- `customerKYC`: The level of Know Your Customer (KYC) verification. customerKYC = 0 means the customer has not completed KYC. customerKYC = 1 means the customer has completed Proof of ID + Liveness Check. customerKYC = 2 means the customer has completed Proof of ID + Liveness Check + Proof of Address.
 - `style`: The styling ID provided by Bitinvestor for customization.
 - `destinationTag`: Adds a destination tag to the XRP transaction. Only supported for XRP.
 
@@ -117,7 +117,7 @@ To receive order notifications you must provide responseUrl. You will receive th
 - `order_crypto_amount`: The exact crypto amount you will receive.
 - `order_crypto`: The cryptocurrency you receive.
 - `order_status`: The current status of the order.
-- `order_crypto_address`: The crypto address where you receive the transaction.
+- `order_crypto_address`: The crypto address where you receive the cryptocurrency.
 - `external_transaction_id`: Your transaction id (If provided in the URL).
 - `external_customer_id`: Your customer's id (If provided in the URL).
 - `order_amount_usd`: The `order_crypto_amount` converted to USD (Mid-market rates without spread). This does not include the platform fee.
@@ -125,7 +125,7 @@ To receive order notifications you must provide responseUrl. You will receive th
 
 ### The signature:
 
-Compute an HMAC with a SHA-256 hash function. Use your secret API key as the key and use request body as the message. Compare this to the signature send in the request header.
+Compute an HMAC with a SHA-256 hash function. Use your secret API key as the key and use the request body as the message. Compare this to the signature sent in the request header.
 
 #### Example with NodeJS:
 
