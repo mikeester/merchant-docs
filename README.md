@@ -40,8 +40,8 @@ This documentation is for merchants who want to integrate Bitinvestor Checkout i
 - `email`: The email address of the customer.
 - `externalTransactionId`: A unique identifier for the transaction.
 - `externalCustomerId`: A unique identifier for the customer.
-- `redirectUrl`: The URL for redirection after purchase completion.
-- `responseUrl`: The URL for receiving order notfications. See more under the secition Order Notifications.
+- `redirectUrl`: The URL for redirection after purchase completion. Must be URLencoded, e.g. h[ps%3A%2F%2Fwww.myurl.com.
+- `responseUrl`: The URL for receiving order notfications. See more under the secition Order Notifications. Must be URLencoded, e.g. h[ps%3A%2F%2Fwww.myurl.com.
 - `customerKYC`: The level of Know Your Customer (KYC) verification.
 - `style`: The styling ID provided by Bitinvestor for customization.
 
