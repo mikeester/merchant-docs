@@ -33,7 +33,7 @@ This documentation is for merchants who want to integrate Bitinvestor Checkout i
 
 ### Optional Parameters:
 
-- `language`: Specify the widget's language using an [ISO 639 Set 1 code](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes).
+- `language`: Specify the widget's language using an [ISO 639 Set 1 code](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes). The language will default to EN (English) if the parsed language is not supported.
 - `baseCurrencyCode`: The fiat currency code for transactions (e.g., USD, EUR, GBP). See the section on supported fiat currencies for more options.
 - `baseCurrencyAmount`: The fiat amount to be spent, in integer form.
 - `quoteCurrencyAmount`: The cryptocurrency amount to be purchased, in integer form.
@@ -44,6 +44,7 @@ This documentation is for merchants who want to integrate Bitinvestor Checkout i
 - `responseUrl`: The URL for receiving order notfications. See more under the secition Order Notifications. Must be URLencoded, e.g. h[ps%3A%2F%2Fwww.myurl.com.
 - `customerKYC`: The level of Know Your Customer (KYC) verification.
 - `style`: The styling ID provided by Bitinvestor for customization.
+- `destinationTag`: Adds a destination tag to the XRP transaction. Only supported for XRP.
 
 
 ## Server-Side URL Signature:
