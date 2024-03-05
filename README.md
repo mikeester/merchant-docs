@@ -35,6 +35,7 @@ This documentation is for merchants who want to integrate Bitinvestor Checkout i
 
 - `language`: Specify the widget's language using an [ISO 639 Set 1 code](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes). The language will default to EN (English) if the parsed language is not supported.
 - `baseCurrencyCode`: The fiat currency code for transactions (e.g., USD, EUR, GBP). See the section on supported fiat currencies for more options.
+- `lockBaseCurrency`: Locks the currency selection to the specified `baseCurrencyCode`
 - `baseCurrencyAmount`: The fiat amount to be spent, in integer form.
 - `quoteCurrencyAmount`: The cryptocurrency amount to be purchased, in integer form.
 - `email`: The email address of the customer.
