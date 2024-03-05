@@ -35,7 +35,7 @@ This documentation is for merchants who want to integrate Bitinvestor Checkout i
 
 - `language`: Specify the widget's language using an [ISO 639 Set 1 code](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes). The language will default to EN (English) if the parsed language is not supported.
 - `baseCurrencyCode`: The fiat currency code for transactions (e.g., USD, EUR, GBP). See the section on supported fiat currencies for more options.
-- `lockBaseCurrency`: Locks the currency selection to the specified `baseCurrencyCode`
+- `lockBaseCurrency`: (True/False) Locks the currency selection to the specified `baseCurrencyCode`
 - `baseCurrencyAmount`: The fiat amount to be spent, in integer form.
 - `quoteCurrencyAmount`: The cryptocurrency amount to be purchased, in integer form.
 - `email`: The email address of the customer.
@@ -46,6 +46,7 @@ This documentation is for merchants who want to integrate Bitinvestor Checkout i
 - `customerKYC`: The level of Know Your Customer (KYC) verification. customerKYC = 0 means the customer has not completed KYC. customerKYC = 1 means the customer has completed Proof of ID + Liveness Check. customerKYC = 2 means the customer has completed Proof of ID + Liveness Check + Proof of Address.
 - `style`: The styling ID provided by Bitinvestor for customization.
 - `destinationTag`: Adds a destination tag to the XRP transaction. Only supported for XRP.
+- `coverFees`: (True/False) Sets processing and handling fees to zero for the customer. Fees will be added through the spread.
 
 
 ## Server-Side URL Signature:
