@@ -85,6 +85,17 @@ To receive order notifications you must provide responseUrl. You will receive th
 
 ### Responses
 
+
+#### Payment Pending:
+
+```json
+{
+  "order_status": "payment_pending",
+  "external_transaction_id": "1234567",
+  "external_customer_id": "1234567"
+}
+```
+
 #### Order Completed:
 
 ```json
