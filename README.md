@@ -97,6 +97,17 @@ To receive order notifications you must provide responseUrl. You will receive th
 }
 ```
 
+#### Order Cancelled:
+
+```json
+{
+  "order_status": "order_cancelled",
+  "external_transaction_id": "1234567",
+  "external_customer_id": "1234567",
+  "order_id": "9fcc45a5-4def-4953-9bd8-9ff75d9aaa9c"
+}
+```
+
 #### Order Completed:
 
 ```json
@@ -110,17 +121,6 @@ To receive order notifications you must provide responseUrl. You will receive th
   "external_customer_id": "1234567",
   "order_amount_usd": 25,
   "order_amount_usd_plus_fees": 25.5
-}
-```
-
-#### Order Cancelled:
-
-```json
-{
-  "order_status": "order_cancelled",
-  "external_transaction_id": "1234567",
-  "external_customer_id": "1234567",
-  "order_id": "9fcc45a5-4def-4953-9bd8-9ff75d9aaa9c"
 }
 ```
 
