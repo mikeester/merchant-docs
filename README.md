@@ -92,7 +92,8 @@ To receive order notifications you must provide responseUrl. You will receive th
 {
   "order_status": "payment_pending",
   "external_transaction_id": "1234567",
-  "external_customer_id": "1234567"
+  "external_customer_id": "1234567",
+  "order_id": "9fcc45a5-4def-4953-9bd8-9ff75d9aaa9c"
 }
 ```
 
@@ -118,7 +119,8 @@ To receive order notifications you must provide responseUrl. You will receive th
 {
   "order_status": "order_cancelled",
   "external_transaction_id": "1234567",
-  "external_customer_id": "1234567"
+  "external_customer_id": "1234567",
+  "order_id": "9fcc45a5-4def-4953-9bd8-9ff75d9aaa9c"
 }
 ```
 
