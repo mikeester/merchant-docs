@@ -126,6 +126,23 @@ To receive order notifications you must provide responseUrl. You will receive th
 }
 ```
 
+#### Order Broadcasted:
+
+```json
+{
+  "order_id": "9fcc45a5-4def-4953-9bd8-9ff75d9aaa9c",
+  "order_crypto_amount": 0.347764,
+  "order_crypto": "LTC",
+  "order_status": "order_broadcasted",
+  "transaction_id": "ea458dda0ff8583199bdd4d9b9a69a2813694764a633fd40b27de22a868cebec"
+  "order_crypto_address": "ltc1qlec2yfpkdvn4lr0vpf27qggrxtu34zeu5l6g2u",
+  "external_transaction_id": "1234567",
+  "external_customer_id": "1234567",
+  "order_amount_usd": 25,
+  "order_amount_usd_plus_fees": 25.5
+}
+```
+
 ### Response Definition:
 
 - `order_id`: The order id on Bitinvestor.
