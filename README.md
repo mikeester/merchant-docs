@@ -30,13 +30,13 @@ This documentation is for merchants who want to integrate Bitinvestor Checkout i
 ### Required Parameters:
 
 - `apiKey`: Your publishable API key for customer and transaction assignment. Also known as the public key.
-- `currencyCode`: The cryptocurrency code (e.g., BTC, ETH, BCH) for purchase. See below for all supported cryptocurrencies. If multiple walletAddress are set, this will be the default cryptocurrency.
+- `currencyCode`: The cryptocurrency code (e.g., BTC, ETH, BCH) for purchase. See [Supported Cryptocurrencies](https://github.com/BitinvestorNet/merchant-docs?tab=readme-ov-file#supported-cryptocurrencies) for more options. If multiple walletAddress are set, this will be the default cryptocurrency.
 - `walletAddress`: The destination cryptocurrency wallet address for purchased funds. For instance, if you want to accept Bitcoin, Litecoin, and Dogecoin, format the walletAddress parameter as follows: btc:yourBitcoinAddress,ltc:yourLitecoinAddress,doge:yourDogecoinAddress.
 
 ### Optional Parameters:
 
 - `language`: Specify the widget's language using an [ISO 639 Set 1 code](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes). The language will default to EN (English) if the parsed language is not supported.
-- `baseCurrencyCode`: The fiat currency code for transactions (e.g., USD, EUR, GBP). See the section on supported fiat currencies for more options.
+- `baseCurrencyCode`: The fiat currency code for transactions (e.g., USD, EUR, GBP). See [Supported Fiat currencies](https://github.com/BitinvestorNet/merchant-docs?tab=readme-ov-file#supported-fiat-currencies) for more options.
 - `lockBaseCurrency`: (True/False) Locks the currency selection to the specified `baseCurrencyCode`
 - `baseCurrencyAmount`: The fiat currency amount to be spent, in integer form. 2 decimals max.
 - `quoteCurrencyAmount`: The cryptocurrency amount to be purchased, in integer form. 3 decimals max. 
