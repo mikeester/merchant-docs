@@ -1,6 +1,6 @@
 # Bitinvestor Merchant Checkout Documentation
 
-This documentation is for merchants who want to integrate Bitinvestor Checkout into their website. Bitinvestor Checkout is a widget that allows your customers to deposit crypto on your website, paid for by the user in fiat. The widget is embedded in an iFrame and is fully customizable. The widget is designed to be simple to use and easy to integrate into your website.
+This documentation is for merchants who want to integrate Bitinvestor Checkout into their website. Bitinvestor Checkout is a widget that allows your customers to deposit cryptocurrency on your website, paid for by the customer in fiat. The widget is embedded in an iFrame and is fully customizable. The widget is designed to be simple to use and easy to integrate into your website.
 
 
 - [Bitinvestor Merchant Checkout Documentation](#bitinvestor-merchant-checkout-documentation)
@@ -28,21 +28,21 @@ This documentation is for merchants who want to integrate Bitinvestor Checkout i
 ### Required Parameters:
 
 - `apiKey`: Your publishable API key for customer and transaction assignment. Also known as the public key.
-- `currencyCode`: The cryptocurrency code (e.g., BTC, ETH, BCH) for purchase. See below for all supported cryptocurrencies. If multiple walletAddress are set, this will be the default.
-- `walletAddress`: The destination cryptocurrency wallet address for purchased funds. If you want to support multiple cryptocurrencies the format should be: btc:testaddress1,ltc:testaddress2,doge:testaddress3
+- `currencyCode`: The cryptocurrency code (e.g., BTC, ETH, BCH) for purchase. See below for all supported cryptocurrencies. If multiple walletAddress are set, this will be the default cryptocurrency.
+- `walletAddress`: The destination cryptocurrency wallet address for purchased funds. For instance, if you want to accept Bitcoin, Litecoin, and Dogecoin, format the walletAddress parameter as follows: btc:yourBitcoinAddress,ltc:yourLitecoinAddress,doge:yourDogecoinAddress.
 
 ### Optional Parameters:
 
 - `language`: Specify the widget's language using an [ISO 639 Set 1 code](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes). The language will default to EN (English) if the parsed language is not supported.
 - `baseCurrencyCode`: The fiat currency code for transactions (e.g., USD, EUR, GBP). See the section on supported fiat currencies for more options.
 - `lockBaseCurrency`: (True/False) Locks the currency selection to the specified `baseCurrencyCode`
-- `baseCurrencyAmount`: The fiat amount to be spent, in integer form.
-- `quoteCurrencyAmount`: The cryptocurrency amount to be purchased, in integer form.
+- `baseCurrencyAmount`: The fiat currency amount to be spent, in integer form. 2 decimals max.
+- `quoteCurrencyAmount`: The cryptocurrency amount to be purchased, in integer form. 3 decimals max. 
 - `email`: The email address of the customer.
 - `externalTransactionId`: A unique identifier for the transaction.
 - `externalCustomerId`: A unique identifier for the customer.
 - `redirectUrl`: The URL for redirection after purchase completion. Must be URLencoded, e.g. https%3A%2F%2Fwww.myurl.com.
-- `responseUrl`: The URL for receiving order notfications. See more under the secition Order Notifications. Must be URLencoded, e.g. https%3A%2F%2Fwww.myurl.com.
+- `responseUrl`: The URL for receiving order notifications. See more under the section Order Notifications. Must be URLencoded, e.g. https%3A%2F%2Fwww.myurl.com.
 - `customerKYC`: The level of Know Your Customer (KYC) verification. customerKYC = 0 means the customer has not completed KYC. customerKYC = 1 means the customer has completed Proof of ID + Liveness Check. customerKYC = 2 means the customer has completed Proof of ID + Liveness Check + Proof of Address.
 - `style`: The styling ID provided by Bitinvestor for customization.
 - `destinationTag`: Adds a destination tag to the XRP transaction. Only supported for XRP.
@@ -83,12 +83,14 @@ https://checkout.bitinvestor.net?apiKey={pk_live_key}&currencyCode=btc&signature
 ```
 
 ## Order Notifications:
-To receive order notifications you must provide responseUrl. You will receive the notification on the provided url. In the header of the HTTP request there’s a signature to make sure the data comes from Bitinvestor. 
+To receive order notifications you must provide responseUrl. You will receive the notification on the provided url. In the header of the HTTP request, there’s a signature to make sure the data comes from Bitinvestor. 
+Order notifications are sent to the responseUrl you specify. These notifications inform you of the status of each order. Below are the types of notifications you might receive and the recommended actions for each.
 
 ### Responses
 
 
 #### Payment Pending:
+Indicates that the transaction has been created but the customer hasn't completed payment.
 
 ```json
 {
@@ -100,6 +102,7 @@ To receive order notifications you must provide responseUrl. You will receive th
 ```
 
 #### Order Cancelled:
+Indicates that the order is cancelled for any reason, such as payment failure, or user cancellation.
 
 ```json
 {
@@ -111,6 +114,7 @@ To receive order notifications you must provide responseUrl. You will receive th
 ```
 
 #### Order Completed:
+Indicates that the order has been fully processed, and the crypto purchase was successful.
 
 ```json
 {
@@ -127,6 +131,7 @@ To receive order notifications you must provide responseUrl. You will receive th
 ```
 
 #### Order Broadcasted:
+Indicates that the crypto transaction has been broadcasted to the blockchain.
 
 ```json
 {
@@ -146,10 +151,10 @@ To receive order notifications you must provide responseUrl. You will receive th
 ### Response Definition:
 
 - `order_id`: The order id on Bitinvestor.
-- `order_crypto_amount`: The exact crypto amount you will receive.
+- `order_crypto_amount`: The exact cryptocurrency amount you will receive.
 - `order_crypto`: The cryptocurrency you receive.
 - `order_status`: The current status of the order.
-- `order_crypto_address`: The crypto address where you receive the cryptocurrency.
+- `order_crypto_address`: The cryptocurrency address where you receive the cryptocurrency.
 - `external_transaction_id`: Your transaction id (If provided in the URL).
 - `external_customer_id`: Your customer's id (If provided in the URL).
 - `order_amount_usd`: The `order_crypto_amount` converted to USD (Mid-market rates without spread). This does not include the platform fee.
