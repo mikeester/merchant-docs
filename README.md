@@ -74,6 +74,8 @@ console.log(urlWithSignature);
 
 ### Example iFrame URL:
 
+The iFrame has been optimized for height: 585px; width: 445px;.
+
 https://checkout.bitinvestor.net?apiKey={pk_live_key}&currencyCode=btc&signature=loremipsum 
 
 
