@@ -48,7 +48,7 @@ This documentation is for merchants who want to integrate Bitinvestor Checkout i
 - `customerKYC`: The level of Know Your Customer (KYC) verification. customerKYC = 0 means the customer has not completed KYC. customerKYC = 1 means the customer has completed Proof of ID + Liveness Check. customerKYC = 2 means the customer has completed Proof of ID + Liveness Check + Proof of Address.
 - `style`: The styling ID provided by Bitinvestor for customization.
 - `destinationTag`: Adds a destination tag to the XRP transaction. Only supported for XRP.
-- `coverFees`: (True/False) Sets processing and handling fees to zero for the customer. Fees will be added through the spread.
+- `coverFees`: (True/False) Sets processing and handling fees to zero for the customer. Fees will be included through the spread.
 
 
 ## Server-Side URL Signature:
