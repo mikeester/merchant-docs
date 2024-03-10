@@ -116,7 +116,7 @@ Indicates that the order is cancelled for any reason, such as payment failure, o
 ```
 
 #### Order Completed:
-Indicates that the order has been fully processed, and the crypto purchase was successful.
+Indicates that the order has been processed, and the cryptocurrency purchase was successful.
 
 ```json
 {
@@ -133,7 +133,7 @@ Indicates that the order has been fully processed, and the crypto purchase was s
 ```
 
 #### Order Broadcasted:
-Indicates that the crypto transaction has been broadcasted to the blockchain.
+Indicates that the cryptocurrency transaction has been broadcasted to the blockchain.
 
 ```json
 {
