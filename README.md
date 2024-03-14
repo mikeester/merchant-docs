@@ -130,7 +130,8 @@ Indicates that the order has been processed, and the cryptocurrency purchase was
   "external_transaction_id": "1234567",
   "external_customer_id": "1234567",
   "order_amount_usd": 25,
-  "order_amount_usd_plus_fees": 25.5
+  "order_amount_usd_plus_fees": 25.5,
+  "payment_method": "creditcard"
 }
 ```
 
@@ -148,7 +149,8 @@ Indicates that the cryptocurrency transaction has been broadcasted to the blockc
   "external_transaction_id": "1234567",
   "external_customer_id": "1234567",
   "order_amount_usd": 25,
-  "order_amount_usd_plus_fees": 25.5
+  "order_amount_usd_plus_fees": 25.5,
+  "payment_method": "creditcard"
 }
 ```
 
@@ -163,6 +165,7 @@ Indicates that the cryptocurrency transaction has been broadcasted to the blockc
 - `external_customer_id`: Your customer's id (If provided in the URL).
 - `order_amount_usd`: The `order_crypto_amount` converted to USD (Mid-market rates without spread). This does not include the platform fee.
 - `order_amount_usd_plus_fees`: The `order_amount_usd` plus the platform fee.
+- `payment_method`: The method of payment used.
 
 ### The signature:
 
