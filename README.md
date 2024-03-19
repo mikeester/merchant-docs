@@ -87,8 +87,8 @@ https://checkout.bitinvestor.net?apiKey={pk_live_key}&currencyCode=btc&signature
 ```
 
 ## Order Notifications:
-To receive order notifications you must provide responseUrl. You will receive the notification on the provided url. In the header of the HTTP request, there’s a signature to make sure the data comes from Bitinvestor. 
-Order notifications are sent to the responseUrl you specify. These notifications inform you of the status of each order. Below are the types of notifications you might receive and the recommended actions for each.
+To receive order notifications you must provide a responseUrl. You will receive the notification on the provided url. In the header of the HTTP request, there’s a signature to make sure the data comes from Bitinvestor. 
+Order notifications are sent to the responseUrl you specify. These notifications inform you of the status of each order. Below are the types of notifications you can receive.
 
 ### Responses
 
