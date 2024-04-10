@@ -24,6 +24,8 @@ This documentation is for merchants who want to integrate Bitinvestor Checkout i
   - [Supported Fiat Currencies:](#supported-fiat-currencies)
   - [Test Credentials](#test-credentials)
     - [Credit Card:](#credit-card)
+  - [Payment Methods](#payment-methods)
+    - [Response Definition:](#response-definition-1)
 
 ## Query Parameters
 
@@ -225,4 +227,39 @@ CVC/CVV:
 ```plaintext
 123
 ```
+
+## Payment Methods
+All payment methods & their supported countries can be retrieved with a GET request.
+
+URL:  https://eosdj3ojuf31557.m.pipedream.net/
+
+Response:
+```json
+{
+    {
+    "id": 2,
+    "name": "PIX",
+    "fee": 2,
+    "slug": "pix",
+    "area": [
+      "BR"
+    ],
+    "currency": [
+      "BRL"
+    ],
+    "excluded": [
+      
+    ]
+  },
+}
+```
+
+### Response Definition:
+- `id`: The payment method id.
+- `name`: The name of the payment method.
+- `fee`: The fee in percentage.
+- `slug`: The payment method slug.
+- `area`: The areas where the payment method is available. These use [ISO 639 Set 1 code](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes).
+- `currency`: The currencies the payment method supports.
+- `excluded`: Countries not supported by this payment method.
 
