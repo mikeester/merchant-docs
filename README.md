@@ -26,6 +26,8 @@ This documentation is for merchants who want to integrate Bitinvestor Checkout i
     - [Credit Card:](#credit-card)
   - [Payment Methods](#payment-methods)
     - [Response Definition:](#response-definition-1)
+  - [Get Payment Status](#get-payment-status)
+    - [Response Definition:](#response-definition-2)
 
 ## Query Parameters
 
@@ -262,4 +264,36 @@ Response:
 - `area`: The areas where the payment method is available. These use [ISO 639 Set 1 code](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes).
 - `currency`: The currencies the payment method supports.
 - `excluded`: Countries not supported by this payment method.
+
+## Get Payment Status
+All payment methods & their supported countries can be retrieved with a GET request.
+
+URL:  https://eocb95pk8c29bt6.m.pipedream.net
+
+Request Data:
+```json
+{
+  "order_id": "bitinvestor_order_id",
+  "api_key": "your_public_key"
+}
+```
+
+Response:
+```json
+{
+    "order_id": "bitinvestor_order_id",
+    "order_crypto": "LTC",
+    "external_transaction_id": "",
+    "external_customer_id": "123456",
+    "order_status": "order_broadcasted",
+    "transaction_id": "fada834ba9f1b398bacf6153e44e320dfe1821bffe03a68d29ca76cb3bbc60c5"
+}
+
+### Response Definition:
+- `order_id`: The order id on Bitinvestor.
+- `order_crypto`: The cryptocurrency you receive.
+- `external_transaction_id`: Your transaction id (If provided in the URL).
+- `external_customer_id`: Your customer's id (If provided in the URL).
+- `order_status`: The current status of the order.
+- `transaction_id`: The transaction id on the blockchain.
 
