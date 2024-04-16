@@ -266,7 +266,7 @@ Response:
 - `excluded`: Countries not supported by this payment method.
 
 ## Get Payment Status
-All payment methods & their supported countries can be retrieved with a GET request.
+Allows for retrieving the status of a payment.
 
 URL:  https://eocb95pk8c29bt6.m.pipedream.net
 
