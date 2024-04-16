@@ -288,6 +288,7 @@ Response:
     "order_status": "order_broadcasted",
     "transaction_id": "fada834ba9f1b398bacf6153e44e320dfe1821bffe03a68d29ca76cb3bbc60c5"
 }
+```
 
 ### Response Definition:
 - `order_id`: The order id on Bitinvestor.
