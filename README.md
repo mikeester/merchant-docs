@@ -213,7 +213,7 @@ const signature =
 
 ## Test Credentials
 
-It's currently only possible to make test orders with Visa/MasterCard as the payment method.
+It's currently only possible to make test orders with Visa/MasterCard as the payment method and EUR + USD as the payment currency.
 
 ### Credit Card:
 
