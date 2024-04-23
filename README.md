@@ -45,8 +45,8 @@ This documentation is for merchants who want to integrate Bitinvestor Checkout i
 - `baseCurrencyAmount`: The fiat currency amount to be spent, in integer form. 2 decimals max. Cannot be zero if set.
 - `quoteCurrencyAmount`: The cryptocurrency amount to be purchased, in integer form. 3 decimals max. 
 - `email`: The email address of the customer.
-- `externalTransactionId`: A unique identifier for the transaction.
-- `externalCustomerId`: A unique identifier for the customer.
+- `externalTransactionId`: Your unique identifier for the transaction.
+- `externalCustomerId`: Your unique identifier for the customer.
 - `redirectUrl`: The URL for redirection after purchase completion. Must be URLencoded, e.g. https%3A%2F%2Fwww.myurl.com.
 - `responseUrl`: The URL for receiving order notifications. See more under the section Order Notifications. Must be URLencoded, e.g. https%3A%2F%2Fwww.myurl.com.
 - `customerKYC`: The level of Know Your Customer (KYC) verification. customerKYC = 0 means the customer has not completed KYC. customerKYC = 1 means the customer has completed Proof of ID + Liveness Check. customerKYC = 2 means the customer has completed Proof of ID + Liveness Check + Proof of Address.
