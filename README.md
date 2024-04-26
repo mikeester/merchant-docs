@@ -274,7 +274,7 @@ Request Data:
 ```json
 {
   "order_id": "bitinvestor_order_id",
-  "api_key": "your_public_key"
+  "api_key": "your_secret_key"
 }
 ```
 
