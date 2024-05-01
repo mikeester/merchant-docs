@@ -195,8 +195,10 @@ const signature =
 
 | Currency |  |  |  |  |
 | ------------ | ------------- | --- | ------------- | ------------- |
-| BTC          | LTC           | ETH | USDT (ERC-20) | USDC (ERC-20) |
-| DAI (ERC-20) | LINK (ERC-20) | BCH | DOGE          | XRP           |
+| BTC          | LTC           | ETH | XRP           | USDC_ETHEREUM |
+| DAI_ETHEREUM | LINK_ETHEREUM | BCH | DOGE          | USDT_ETHEREUM |
+| USDT_TRON    | USDT_SOLANA   | TRX | SOL           |               |
+
 
 
 ## Supported Fiat Currencies:
