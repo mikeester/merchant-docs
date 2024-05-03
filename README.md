@@ -197,7 +197,7 @@ const signature =
 | ------------ | ------------- | --- | ------------- | ------------- |
 | BTC          | LTC           | ETH | XRP           | USDC_ETHEREUM |
 | DAI_ETHEREUM | LINK_ETHEREUM | BCH | DOGE          | USDT_ETHEREUM |
-| USDT_TRON    | USDT_SOLANA   | TRX | SOL           |               |
+| USDT_TRON    | USDT_SOLANA   | TRX | SOL           | TON           |
 
 
 
