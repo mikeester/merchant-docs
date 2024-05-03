@@ -51,7 +51,7 @@ This documentation is for merchants who want to integrate Bitinvestor Checkout i
 - `responseUrl`: The URL for receiving order notifications. See more under the section Order Notifications. Must be URLencoded, e.g. https%3A%2F%2Fwww.myurl.com.
 - `customerKYC`: The level of Know Your Customer (KYC) verification. customerKYC = 0 means the customer has not completed KYC. customerKYC = 1 means the customer has completed Proof of ID + Liveness Check. customerKYC = 2 means the customer has completed Proof of ID + Liveness Check + Proof of Address.
 - `style`: The styling ID provided by Bitinvestor for customization.
-- `destinationTag`: Adds a destination tag to the XRP transaction. Only supported for XRP and TON.
+- `destinationTag`: Adds a destination tag to the transaction. Only supported for XRP and TON.
 - `coverFees`: (True/False) Sets processing and handling fees to zero for the customer. Fees will be included through the spread.
 
 
