@@ -53,6 +53,7 @@ This documentation is for merchants who want to integrate Bitinvestor Checkout i
 - `style`: The styling ID provided by Bitinvestor for customization.
 - `destinationTag`: Adds a destination tag to the transaction. Only supported for XRP and TON.
 - `coverFees`: (True/False) Sets processing and handling fees to zero for the customer. Fees will be included through the spread.
+- `minAmount`: Sets the minimum order amount in EUR.
 
 
 ## Server-Side URL Signature:
