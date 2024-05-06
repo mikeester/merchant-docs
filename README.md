@@ -163,6 +163,8 @@ Indicates that the cryptocurrency transaction has been broadcasted to the blockc
   "external_customer_id": "1234567",
   "order_amount_usd": 25,
   "order_amount_usd_plus_fees": 25.5,
+  "order_amount_eur": 21,
+  "order_amount_eur_plus_fees": 22.5,
   "payment_method": "creditcard"
 }
 ```
