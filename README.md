@@ -35,7 +35,8 @@ This documentation is for merchants who want to integrate Bitinvestor Checkout i
 
 - `apiKey`: Your publishable API key for customer and transaction assignment. Also known as the public key.
 - `currencyCode`: The cryptocurrency code (e.g., BTC, ETH, BCH) for purchase. See [Supported Cryptocurrencies](https://github.com/BitinvestorNet/merchant-docs?tab=readme-ov-file#supported-cryptocurrencies) for more options. If multiple walletAddress are set, this will be the default cryptocurrency.
-- `walletAddress`: The destination cryptocurrency wallet address for purchased funds. For instance, if you want to accept Bitcoin, Litecoin, and Dogecoin, format the walletAddress parameter as follows: btc:yourBitcoinAddress,ltc:yourLitecoinAddress,doge:yourDogecoinAddress.
+- `walletAddress`: The destination cryptocurrency wallet address for purchased funds. For instance, if you want to accept Bitcoin, Litecoin, and Dogecoin, format the walletAddress parameter as follows: `walletAddress=BTC:yourBitcoinAddress,LTC:yourLitecoinAddress,DOGE:yourDogecoinAddress`.
+  **Note** that the code is case sensitive so ensure the code you use for your default cryptocurrency matches what you used in `currencyCode` field.
 
 ### Optional Parameters:
 
